@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/selecionetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:hint="Selecione a Categoria"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/livro_button"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Livros"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:backgroundTint="#78c0aa"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selecionetxt" />
+
+    <Button
+        android:id="@+id/hq_button"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="HQs"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="#dc7f32"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/livro_button" />
+
+    <Button
+        android:id="@+id/manga_button"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Mangás"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="#e6ac3e"
+        app:cornerRadius="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hq_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
